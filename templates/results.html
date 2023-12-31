@@ -1,0 +1,28 @@
+<!-- results.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Results for <span class="search-query">{{ search_query }}</span></h2>
+            <a href="/" class="btn btn-secondary back-button">Back</a>
+        </div>
+        {% for result in search_results %}
+            <div class="result-container mb-4">
+                <h3 class="result-title">{{ result['_source']['ProductName'] }}</h3>
+                <p class="result-description">Description: {{ result['_source']['Description'] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

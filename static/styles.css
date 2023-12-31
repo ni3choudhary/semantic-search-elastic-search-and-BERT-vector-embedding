@@ -1,0 +1,53 @@
+/* styles.css */
+
+body {
+    padding: 20px;
+}
+
+.result-container {
+    margin-top: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 15px;
+    border: 1px solid #dee2e6; /* Border color */
+    border-radius: 5px;
+}
+
+/* Add a custom class for the input box to make it longer */
+.custom-input {
+    width: 300px;
+}
+
+
+/* styles.css */
+
+/* Styles for the search query */
+.search-query {
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+}
+
+/* Styles for the result title */
+.result-title {
+    color: #212529; /* Dark text color */
+    font-size: 1.5rem; /* Larger font size */
+    margin-bottom: 0.5rem; /* Adjust spacing */
+}
+
+/* Styles for the result description */
+.result-description {
+    color: #6c757d; /* Gray text color */
+    margin-bottom: 0; /* Remove default margin */
+}
+
+
+/* Style for the back button */
+.back-button {
+    background-color: #8fa6a7; /* Blue color */
+    color: white; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for the back button */
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
